@@ -40,7 +40,7 @@
         {#    "symbol": $('#id_symbol').val(),#}
         {#    "price": $('#id_price').val(),#}
         {# }))#}
-        var intervalID = setInterval(repeat_send, 60000);
+        var intervalID = setInterval(repeat_send, 10000);
     })
     function repeat_send(){
         socket.send(JSON.stringify({
